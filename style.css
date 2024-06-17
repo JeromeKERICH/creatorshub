@@ -372,12 +372,12 @@ section {
 /*services*/
 
 .section {
-    margin-bottom: 44px;
+    margin-bottom: 10px;
 }
 
 .grid {
     display: grid;
-    gap: 44px;
+    gap: 10px;
 }
 
 .three-column {
@@ -396,7 +396,7 @@ section {
 }
 
 .service {
-    padding: 44px;
+    padding: 10px;
 }
 
 .service .heading-3 {
@@ -423,7 +423,7 @@ section {
 
 @media (max-width: 768px) {
     .grid {
-        gap: 24px;
+        gap: 15px;
     }
     .three-column {
         grid-template-columns: repeat(1, 1fr);
@@ -455,7 +455,7 @@ section {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 44px;
+    padding: 20px;
     display: flex;
     align-items: flex-end;
     transition: all 0.4s ease-in-out;

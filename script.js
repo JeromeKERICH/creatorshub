@@ -30,8 +30,7 @@ navLinksLi.forEach(li =>li.addEventListener('click', ()=> {
 
 
 /* team */
-
-
+  
 
 
 
