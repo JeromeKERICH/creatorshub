@@ -1,0 +1,108 @@
+[33mcommit 7acab3ff455a5a5b6ab978e8eb4031445e5fa4ce[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 27fbb4c e646177
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Fri Jun 21 11:39:42 2024 +0300
+
+    Merge branch 'main' of https://github.com/JeromeKERICH/creatorshub
+
+[33mcommit 27fbb4c87cebccab66de44074e350bb34410e99e[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Fri Jun 21 11:29:57 2024 +0300
+
+    Description of new changes
+
+[33mcommit e646177d4e0d2d49d6ba9b8d81606226af7c3593[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Wed Jun 19 20:55:45 2024 +0300
+
+    Delete CNAME
+
+[33mcommit d78a25463358a9566ee8c8835e55ae75d1ce49cb[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Wed Jun 19 20:49:28 2024 +0300
+
+    Create CNAME
+
+[33mcommit 744a414ffa1bd2dfca8ae88897094bb75f1b4dae[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Wed Jun 19 20:44:13 2024 +0300
+
+    Create jekyll-gh-pages.yml
+
+[33mcommit 1f183f75571061ad1eb2e2d0f14e3ceab428706e[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Wed Jun 19 20:38:04 2024 +0300
+
+    Added creatorskenya submodule
+
+[33mcommit 66a43ceea90c7161fd5a0d3df858142acc65b632[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Wed Jun 19 00:17:52 2024 +0800
+
+    Remove submodule creatorskenya
+
+[33mcommit ef00d924845de63b843c85e2d14286ed48f0e220[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Tue Jun 18 23:18:50 2024 +0800
+
+    Delete CNAME
+
+[33mcommit 5f7e4ff2748b2f05fc3823fdf8704b62f54aff0a[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Tue Jun 18 23:18:37 2024 +0800
+
+    Update CNAME
+
+[33mcommit 9217dcf767802e2482242666608980856a435509[m
+Author: Emmanuel Kerich <professionalcvwritersconsultan@gmail.com>
+Date:   Tue Jun 18 23:17:58 2024 +0800
+
+    Create CNAME
+
+[33mcommit 71d054eefdf04e583db30ada7d96819072d5e895[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Tue Jun 18 22:09:11 2024 +0800
+
+    Recent changes
+
+[33mcommit 0ec428378d63458b8733dd471cf2eb2b04920451[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 21:00:45 2024 +0800
+
+    New changes
+
+[33mcommit 4f35f97c10e3144fabeac18037db25a84c89cf67[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 03:21:38 2024 +0800
+
+    add multiple images
+
+[33mcommit 80ca8b7f703c06f380a311ced3dfc728b38cbd89[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 02:44:27 2024 +0800
+
+    Add .gitattributes and creatorskenya directory
+
+[33mcommit b2a4d03dd227708bb81e166b8e2dfaf6153e4d09[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 01:53:35 2024 +0800
+
+    Hello Creators
+
+[33mcommit dc9e645a19597e54efa2f7e6657c303a570510a1[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 01:50:23 2024 +0800
+
+    Hello Member
+
+[33mcommit 76bcf125c6527c1fd7cb66cc5bb919065eed797c[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Mon Jun 17 01:36:58 2024 +0800
+
+    Global creators hub
+
+[33mcommit e2cb461a27e297286b1df76e3dfb7fc2c0ada7f7[m
+Author: jeromekerich <professionalcvwritersconsultan@gmail.com>
+Date:   Sun Jun 16 22:08:20 2024 +0800
+
+    first commit
