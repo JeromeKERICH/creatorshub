@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;1,500&display=swap');
+
+:root {
+    --c-brand: #fac562;
+    --c-dark: #333;
+    --c-body: #666;
+    --c-light: #f8f8f8;
+    --f-base: "Plus Jakarta Sans", sans-serif;
+    --n-height: 100px;
+}
+
+*,*::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    color: var(--c-body);
+    font-family: var(--f-base);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+header {
+    background: var(--c-light);
+    color: var(--c-brand);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1140x;
+    margin: 0 auto;
+}
+
+#contact .grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 80px;
+}
+
+.form {
+    width: 100%;
+}
+
+.contact-details {
+    margin-bottom: 44px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.form-name {
+    margin-bottom: 24px;
+}
+
+.form-name .form-input {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-name .form-input:focus {
+    outline: none;
+}
+
+.checkbox-group {
+    margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--c-brand);
+    color: #fff;
+}
+
+.container .in-btn {
+    display: inline-block;
+    background-color: var(--c-light);
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.in-btn:hover {
+    background-color: var(--c-brand);
+    color: cadetblue;
+}
+
+@media (max-width: 768px) {
+    #contact .grid {
+        grid-template-columns: 1fr;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

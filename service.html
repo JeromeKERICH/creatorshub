@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading_1">Request a Service</h1>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <div class="grid">
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p>Feel free to reach out for any service requests or inquiries. We are here to assist you! Our representative will reach you within 24HRS</p>
+                </div>
+                <form id="service-form" class="form">
+                    <div class="form-grid">
+                        <div class="form-name">
+                            <label for="full-name">Full Names:</label>
+                            <input type="text" id="full-name" name="full-name" class="form-input" required>
+                        </div>
+
+                        <div class="form-name">
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" id="occupation" name="occupation" class="form-input" required>
+                        </div>
+
+                        <div class="form-name">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-name">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-name">
+                            <label for="country">Country:</label>
+                            <select id="country" name="country" class="form-input" required>
+                                <option value="">Select your continent</option>
+                                <option value="africa">Africa</option>
+                                <option value="america">America</option>
+                                <option value="europe">Europe</option>
+                                <option value="australia">Australia</option>
+                                <option value="asia">Asia</option>
+                                <option value="antarctica">Antarctica</option>
+                            </select>
+                        </div>
+
+                        <div class="form-name">
+                            <label for="services">Services:</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="services" value="consulting"> Content Writing
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="development"> Web Development
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="design"> HR, Career Development & PD
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="marketing"> Digital Marketing
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="marketing"> Production
+                                </label><label>
+                                    <input type="checkbox" name="services" value="marketing"> Virtual Assistant
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="marketing"> Designs
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="services" value="marketing"> Social media management
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('service-form');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const fullName = document.getElementById('full-name').value;
+                const occupation = document.getElementById('occupation').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const country = document.getElementById('country').value;
+
+                const services = [];
+                document.querySelectorAll('input[name="services"]:checked').forEach(checkbox => {
+                    services.push(checkbox.value);
+                });
+
+                if (fullName === '' || occupation === '' || email === '' || phone === '' || country === '' || services.length === 0) {
+                    alert('Please fill in all fields and select at least one service');
+                    return;
+                }
+
+                alert('Service request submitted successfully!');
+                form.reset();
+            });
+        });
+
+    </script>
+</body>
+</html>

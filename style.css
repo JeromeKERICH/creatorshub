@@ -31,7 +31,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color: var(--c-dark);
     line-height: 1.2;
-    margin-bottom: 10px;
     font-weight: 400;
 }
 
@@ -74,7 +73,7 @@ ul {
     list-style: none;
 }
 section {
-    padding: 140px 0;
+    padding: 40px;
 
 }
 
@@ -82,8 +81,8 @@ section {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .btn {
@@ -259,6 +258,17 @@ section {
     color: goldenrod;
 }
 
+@media (max-width: 768px) {
+    #hero {
+        background-size: cover; /* Adjust background size */
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Adjust font size */
+        margin: 20px; /* Adjust margin */
+    }
+}
+
 @keyframes scrolltodown {
     0%{
         transform: translateY(30%);
@@ -324,8 +334,13 @@ section {
     height: auto;
 }
 
-.content .heading-3 {
+.section .heading-2 {
     color: var(--c-brand);
+}
+
+.content .heading-3 {
+    color: cadetblue;
+    padding: 10px 0;
 }
 
 .content p {
@@ -345,7 +360,7 @@ section {
 
 @media (max-width: 768px) {
     .container {
-        width: 80%;
+        width: 100%;
         display: block;
         margin: auto;
         padding-top: 50px;
@@ -374,6 +389,10 @@ section {
 
 #section {
     margin-bottom: 10px;
+}
+
+.section p {
+    padding: 10px 0;
 }
 
 .grid {
@@ -420,6 +439,22 @@ section {
     justify-content: center; 
     align-items: center;    
 }
+.service-button a {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 16px 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.service-button a:hover {
+    background-color: var(--c-brand);
+    color: #fff;
+}
 
 
 @media (max-width: 768px) {
@@ -441,6 +476,8 @@ section {
     position: relative;
     overflow: hidden;
     padding: 20px;
+    width: 100%;
+    cursor: pointer;
 }
 .section p {
     text-align: justify;
@@ -465,6 +502,21 @@ section {
     align-items: flex-end;
     transition: all 0.4s ease-in-out;
     opacity: 0;
+    pointer-events: none;
+}
+
+.work .click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    color: var(--c-light);
+    z-index: 1;
 }
 
 .work .overlay h2 {
@@ -480,12 +532,37 @@ section {
 
 .work:hover .overlay{
     opacity: 2;
-    display: flex;
+    display: block;
 }
 
 .work:hover img {
    transform: rotate(15deg) scale(1.5);
 }
+
+@media (max-width: 768px) {
+    .work {
+        width: 100%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .work img {
+        width: 100%; /* Make the image fill the entire .work container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .work .overlay {
+        opacity: 0; /* Start with overlay hidden */
+        pointer-events: none; /* Initially prevent interaction with overlay */
+    }
+
+    .work:hover .overlay {
+        opacity: 1; /* Display overlay on hover */
+        pointer-events: initial; /* Enable interaction with overlay on hover */
+    }
+}
+
+
+
 
 
 
@@ -500,11 +577,16 @@ section {
 }
 
 .contact-details {
-    margin-bottom: 44px;
+    padding: 10px 0;
+    
 }
 
 .form-name {
     margin-bottom: 24px;
+}
+
+.section {
+    padding: 10px 0;
 }
 
 .form-name .form-input {

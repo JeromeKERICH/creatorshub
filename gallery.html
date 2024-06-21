@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vesloni Event</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Image Gallery</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <header>
+                <h1>Welcome to Our Image Gallery</h1>
+                <p>Discover our amazing collection of images for our previous event at Vesloni. Click on any image to view it in full size and read more about it. Enjoy!</p>
+            </header>
+        
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/T (150 of 576).jpg" alt="Image 1">
+                    <div class="caption">Challenge winners</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam aspernatur ducimus nulla obcaecati!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/T (152 of 576).jpg" alt="Image 2">
+                    <div class="caption">Nicodemus crew</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta incidunt esse recusandae facilis beatae maiores?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/T (165 of 576).jpg" alt="Image 3">
+                    <div class="caption">Ready for fun</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum consequuntur distinctio hic dolorem asperiores nesciunt.</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/T (189 of 576).jpg" alt="Image 6">
+                    <div class="caption">After boat riding</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sint similique ipsam quia dicta deleniti?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food.jpg" alt="Image 7">
+                    <div class="caption">Lunch break</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium illum sunt consectetur, quisquam consequatur?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/culture.jpg" alt="Image 7">
+                    <div class="caption">A touch of Kalenjin Culture (Mursik)</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium illum sunt consectetur, quisquam consequatur?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/T (200 of 576).jpg" alt="Image 7">
+                    <div class="caption">Mbogy ya wakuu Men</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium illum sunt consectetur, quisquam consequatur?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gals.jpg" alt="Image 7">
+                    <div class="caption">Mbogy ya wakuu Ladies</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium illum sunt consectetur, quisquam consequatur?</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/T (377 of 576).jpg" alt="Image 9">
+                    <div class="caption">Indoor Discussion</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci id atque. Officiis, doloribus. Repellat..</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Closing.jpg" alt="Image 7">
+                    <div class="caption">Final Newtorking</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium illum sunt consectetur, quisquam consequatur?</p>
+                </div>
+            </div>
+        
+            <footer>
+                <p>Thank you for visiting our gallery. We hope you enjoyed the collection.</p>
+            </footer>
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
+        
+    
+        <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.createElement('div');
+            lightbox.id = 'lightbox';
+            document.body.appendChild(lightbox);
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    lightbox.classList.add('active');
+                    const img = document.createElement('img');
+                    img.src = item.querySelector('img').src;
+                    const caption = document.createElement('div');
+                    caption.classList.add('caption');
+                    caption.textContent = item.querySelector('.caption').textContent;
+                    const description = document.createElement('p');
+                    description.textContent = item.querySelector('p').textContent;
+
+                    while (lightbox.firstChild) {
+                        lightbox.removeChild(lightbox.firstChild);
+                    }
+
+                    lightbox.appendChild(img);
+                    lightbox.appendChild(caption);
+                    lightbox.appendChild(description);
+                });
+            });
+
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+        });
+
+
+        </script>
+    </body>
+    </html>
+    
+    

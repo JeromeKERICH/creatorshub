@@ -2,7 +2,7 @@ const navbar = document.querySelector('.navbar')
 const hamb = document.querySelector('.hamb')
 const navLinks = document.querySelector('.nav-links')
 const navLinksLi = document.querySelectorAll('.nav-links li')
-
+const workItems = document.querySelectorAll('.work')
 
 window.addEventListener('scroll', () => {
     if(this.scrollY >= 100) {
@@ -25,6 +25,16 @@ navLinksLi.forEach(li =>li.addEventListener('click', ()=> {
     hamb.classList.remove('active')
     navLinks.classList.remove('active')
 }))
+
+
+
+
+
+
+
+
+
+
 
 
 
